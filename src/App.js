@@ -2,6 +2,7 @@
 import HomePages from "./pages/HomePages";
 import Search from "./pages/Search";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./Сomponents/Header";
 
 
 function App() {

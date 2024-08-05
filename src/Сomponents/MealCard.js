@@ -18,37 +18,36 @@ const MealCard = () => {
     return (
         <div>
 
+        {/*<div>*/}
+        {/*    <ModalForm show={showModal} handleClose={handleCloseModal}>*/}
+        {/*        <div className="modal" id="mealModal">*/}
+        {/*            <div className="modal-dialog modal-xl">*/}
+        {/*                <div className="modal-content">*/}
+        {/*                    <div className="modal-header bg-dark">*/}
+        {/*                        <h5 className="modal-title text-white" id="modalTitle"></h5>*/}
+        {/*                        <button type="button" className="btn-close btn-close-white"*/}
+        {/*                                onClick="closeModal()"></button>*/}
+        {/*                    </div>*/}
+        {/*                    <div className="modal-body">*/}
+        {/*                        <img id="modalImage" src="" alt="Cocktail Image" style="width: 40%;"/>*/}
+        {/*                        <ul id="modalIngredients" className="ingredient-list"></ul>*/}
+        {/*                    </div>*/}
+        {/*                    <div className="instruction-block">*/}
+        {/*                        <h4>Cooking instructions</h4>*/}
+        {/*                        <span id="instruction-meal"></span>*/}
+        {/*                        <p>Ссылка на YouTube :<a id="youTube"></a></p>*/}
+        {/*                    </div>*/}
 
-        <div>
-            <ModalForm show={showModal} handleClose={handleCloseModal}>
-                <div className="modal" id="mealModal">
-                    <div className="modal-dialog modal-xl">
-                        <div className="modal-content">
-                            <div className="modal-header bg-dark">
-                                <h5 className="modal-title text-white" id="modalTitle"></h5>
-                                <button type="button" className="btn-close btn-close-white"
-                                        onClick="closeModal()"></button>
-                            </div>
-                            <div className="modal-body">
-                                <img id="modalImage" src="" alt="Cocktail Image" style="width: 40%;"/>
-                                <ul id="modalIngredients" className="ingredient-list"></ul>
-                            </div>
-                            <div className="instruction-block">
-                                <h4>Cooking instructions</h4>
-                                <span id="instruction-meal"></span>
-                                <p>Ссылка на YouTube :<a id="youTube"></a></p>
-                            </div>
 
-
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-secondary" onClick="closeModal()">Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </ModalForm>
-        </div>
+        {/*                    <div className="modal-footer">*/}
+        {/*                        <button type="button" className="btn btn-secondary" onClick="closeModal()">Close*/}
+        {/*                        </button>*/}
+        {/*                    </div>*/}
+        {/*                </div>*/}
+        {/*            </div>*/}
+        {/*        </div>*/}
+        {/*    </ModalForm>*/}
+        {/*</div>*/}
             <div className={'block-cards'}>
                 {meals.map(meal => (
                     <div key={meal.idMeal} className="card">

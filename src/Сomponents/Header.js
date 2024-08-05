@@ -20,9 +20,9 @@ const Header = () => {
 
 
                         <div className="container1">
-                            <input type="text" id="searchField" placeholder="Search..." className="search"
+                            <input type="text" placeholder="Search..." className="search"
                                    aria-label="Search"/>
-                            <button id="submit" className="search-btn">Search</button>
+                            <button  className="search-btn">Search</button>
                         </div>
 
                     </div>
