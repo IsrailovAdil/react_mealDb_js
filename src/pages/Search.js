@@ -10,13 +10,17 @@ const Search = () => {
 
 
     useEffect(() => {
-        const handleSearch = setTimeout(() => {
-            axios(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`)
-                .then(({data})=>setMeals(data.meals))
-        },1500)
+        if (searchValue.trim()) {
+            const handleSearch = setTimeout(() => {
+                axios(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`)
+                    .then(({data}) => setMeals(data.meals))
+                console.log(searchValue);
+            }, 1500)
 
-return ()=>clearTimeout(handleSearch);
-
+            return () => clearTimeout(handleSearch);
+        }else {
+            setMeals([])
+        }
     },[searchValue]);
 
 

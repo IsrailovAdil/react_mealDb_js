@@ -10,20 +10,13 @@ const Header = () => {
                                 <p className="fs-1">MealDB</p>
                             </a>
 
-                        <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <ul className="nav col-12 col-lg-auto  mb-2 justify-content-end mb-md-0">
                             <li><Link to={'/'} className="nav-link px-2 text-secondary">Home</Link></li>
                             <li><Link to={'/search'} className="nav-link px-2 text-white">Search</Link></li>
                             <li><a href="#" className="nav-link px-2 text-white">Pricing</a></li>
                             <li><a href="#" className="nav-link px-2 text-white">FAQs</a></li>
                             <li><a href="#" className="nav-link px-2 text-white">About</a></li>
                         </ul>
-
-
-                        <div className="container1">
-                            <input type="text" placeholder="Search..." className="search"
-                                   aria-label="Search"/>
-                            <button  className="search-btn">Search</button>
-                        </div>
 
                     </div>
                 </div>

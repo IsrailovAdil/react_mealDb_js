@@ -1,19 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from "../Сomponents/Header";
 import MealCard from "../Сomponents/MealCard";
 import Footer from "../Сomponents/Footer";
+import axios from "axios";
+import {Link} from "react-router-dom";
+import MealList from "../Сomponents/MealList";
 
 const HomePages = () => {
+
+
     return (
         <div>
             <Header/>
-            <div className="container">
-                <div className="row align-items-start">
-
-                    <MealCard/>
-                </div>
-
-            </div>
+         <MealList/>
             <Footer/>
         </div>
     );

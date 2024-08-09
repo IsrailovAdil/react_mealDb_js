@@ -1,8 +1,10 @@
 
 import HomePages from "./pages/HomePages";
 import Search from "./pages/Search";
+import MealPage from "./pages/MealPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./Сomponents/Header";
+import IngredientPage from "./pages/ingredientPage";
+
 
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
         <Routes>
             <Route path="/" element={<HomePages/>} />
             <Route path="/search" element={<Search/>} />
+            <Route path="/meal/:id" element={<MealPage/>}/>
+            <Route path="/ingredient/:ingredient" element={<IngredientPage/>}/>
         </Routes>
 </Router>
     </>
