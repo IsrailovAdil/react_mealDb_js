@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Header from "../Сomponents/Header";
-import Footer from "../Сomponents/Footer";
 import axios from "axios";
 import MealCard from "../Сomponents/MealCard";
 
@@ -26,7 +24,7 @@ const Search = () => {
 
     return (
         <div>
-            <Header/>
+
             <div className="container1">
                 <input type="text" placeholder="Search..."
                        className="search" aria-label="Search"
@@ -34,7 +32,7 @@ const Search = () => {
                 <button className="search-btn" >Search</button>
             </div>
 <MealCard meals={meals}/>
-            <Footer/>
+
         </div>
     );
 };
